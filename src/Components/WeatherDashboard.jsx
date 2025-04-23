@@ -7,7 +7,7 @@ function WeatherDashboard() {
 
   async function handleSearch(countyName) {
     try {
-      const res = await fetch("http://localhost:4000/Counties");
+      const res = await fetch("http://localhost:3000/Counties");
       const data = await res.json();
 
       const county = data.find(
