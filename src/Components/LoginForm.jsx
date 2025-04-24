@@ -1,5 +1,6 @@
 // import React from 'react'
 import React, { useState } from 'react';
+import  './LoginForm.css'
 
 
 import user_icon from '../Assets/person.svg'
@@ -10,8 +11,8 @@ const LoginForm = () => {
     const [action,setAction]= useState("Sign Up");
 
   return (
-    <div className='container'>
-    <div className='header'>
+    <div className='container-login'>
+    <div className='header-login'>
         <div className='text'>{action}</div>
         <div className='underline'></div>
     </div>

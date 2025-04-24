@@ -1,4 +1,4 @@
-
+import LoginForm from '../LoginForm'
 import './Navbar.css'
 import logo from '../../Assets/Logo.png'
 import { useEffect, useState } from 'react'
@@ -23,7 +23,7 @@ const Navbar = () => {
             <li>Products</li>
             <li>About Us</li>
             <li> <button className='btn btn-light'>Contact Us</button></li>
-            <li>Log In</li>
+            <li><LoginForm/></li>
         </ul>
 
     </nav>

@@ -1,0 +1,64 @@
+/* weather.css */
+
+/* General container */
+.weather-container {
+    background-color: white;
+    color: #0f2500;
+    min-height: 100vh;
+    padding: 1rem;
+  }
+  
+  .weather-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .location-info {
+    margin-bottom: 1rem;
+  }
+  
+  .select-month {
+    padding: 0.5rem;
+  }
+  
+  /* Card styles */
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 12rem;
+    background-color: #1a3d00;
+    color: white;
+    text-align: center;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+  }
+  
+  .card-text {
+    margin-top: 0.5rem;
+  }
+  
+  /* Additional styles for different forecast types */
+  .hourly-forecast .card-container {
+    margin-top: 2rem;
+  }
+  
+  .daily-forecast .card-container {
+    margin-top: 2rem;
+  }
+  
+  .weekly-forecast .card-container {
+    margin-top: 2rem;
+  }
+  
