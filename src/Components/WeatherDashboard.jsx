@@ -1,5 +1,3 @@
-
-
 import React, { useState } from "react";
 import WeatherForm from "./WeatherForm";
 import WeatherTable from "./WeatherTable";
@@ -22,18 +20,11 @@ function WeatherDashboard() {
       }
 
       const currentMonth = new Date().toLocaleString("en-US", { month: "long" });
-      const forecast = county.monthly_forecast[currentMonth];
-
-      if (!forecast) {
-        alert("No forecast available for this month.");
-        return;
-      }
 
       setWeatherData({
         location: county.location,
-        month: currentMonth,
-        prediction: forecast.prediction,
-        activity: forecast.recommended_activity,
+        forecasts: county.monthly_forecast || {},
+        currentMonth,
       });
     } catch (error) {
       console.error("Weather fetch error:", error);

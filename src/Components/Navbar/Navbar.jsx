@@ -17,20 +17,26 @@ const Navbar = () => {
         })
     },[])
 
+    const [mobileMenu, setMobileMenu]= useState(false);
+    const toggleMenu = ()=>{
+        mobileMenu? setMobileMenu(false) : setMobileMenu (true);
+
+    }
+
 
   return (
-    <nav className= {`container ${sticky? 'dark-nav' : ''}`}>
+    <nav className= {`container ${sticky? 'dark-nav' : 'hide-mobile-menu'}`}>
         <img src= {logo} alt='' className='logo'/>
         
-        <ul>
+        <ul className={mobileMenu?'':''}>
             <li><RouterLink to='/'>Home</RouterLink></li>
 
-            <li><ScrollLink to='weather-container' smooth={true} offset={-260} duration={500}>Forecast</ScrollLink></li>
+            <li><ScrollLink to='mt-4' smooth={true} offset={-260} duration={500}>Forecast</ScrollLink></li>
             <li><ScrollLink to='products' smooth={true} offset={-260} duration={500}>Products</ScrollLink></li>
             <li><RouterLink to='/about'>About Us</RouterLink></li>
             <li> <RouterLink to='/contact'> Contact Us </RouterLink></li>
             <li> <RouterLink to='/container-login'>LogIn</RouterLink></li>
-            <img src={menu_icon} alt="" className='menu-icon'/>
+            <img src={menu_icon} alt="" className='menu-icon' onClick={toggleMenu}/>
         </ul>
 
     </nav>
