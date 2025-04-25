@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 import  './LoginForm.css'
 
 
-import user_icon from '../Assets/person.svg'
-import email_icon from '../Assets/envelope.svg'
-import password_icon from '../Assets/lock.svg'
+import user_icon from '../../Assets/person.svg'
+import email_icon from '../../Assets/envelope.svg'
+import password_icon from '../../Assets/lock.svg'
 
 const LoginForm = () => {
     const [action,setAction]= useState("Sign Up");
@@ -42,5 +42,5 @@ const LoginForm = () => {
   )
 }
 
-export default LoginForm
+export default LoginForm;
 

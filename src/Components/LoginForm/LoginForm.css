@@ -1,15 +1,12 @@
-body{
-    height: 100vh;
-    background: linear-gradient(#105f00,#0f2500);
-}
 
 .container-login{
+    height: 100vh;
     display: flex;
     flex-direction: column;
     margin: auto;
     margin-top: 200px;
     width: 600px;
-    background: #fff;
+    background: linear-gradient(#718d5f,#0f2500);
     padding-bottom: 30px;
 }
 

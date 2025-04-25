@@ -34,3 +34,48 @@ nav ul li{
 
 
   }
+
+.menu-icon{
+  display: none;
+}
+
+  @media (max-width: 1000px){
+    .logo{
+      width: 140px;
+
+    }
+
+    nav ul li{
+      margin: 10px 15px;
+    }
+  }
+
+  @media (max-width:840px){
+    nav{
+      padding: 15px 0;
+    }
+    nav ul{
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: #30a021;
+      z-index: -1;
+      width: 200px;
+      padding: 70px;
+      transition: 0.5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 25px 40px;
+  
+    }
+    .menu-icon{
+      display: block;
+      width: 30px;
+      cursor: pointer;
+    }
+  
+  }
+
+  

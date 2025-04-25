@@ -1,5 +1,6 @@
 import React from 'react'
 import './Hero.css'
+import { Link as ScrollLink } from 'react-scroll';
 
 const Hero = () => {
   return (
@@ -9,7 +10,7 @@ const Hero = () => {
         <p>Kilimo-Digital is a modern farming companion that equips you with real-time weather insights, personalized crop recommendations, and access to essential farming tools — all in one easy-to-use platform.
             Whether you're planning your next planting season or looking for the right equipment, Kilimo-Digital helps you make informed decisions based on accurate climate data and local conditions.</p>
         
-        <button className='btn btn-light'> Explore</button>
+            <ScrollLink to='weather-container' smooth={true} offset={0} duration={500} className="btn btn-light" >Explore</ScrollLink>
         </div>
 
 
