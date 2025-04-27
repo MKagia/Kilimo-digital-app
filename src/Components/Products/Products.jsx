@@ -6,6 +6,12 @@ import product_3 from '../../Assets/Drip irrigation.png'
 import product_icon_1 from '../../Assets/Cart-Icon.svg'
 
 
+
+
+
+
+
+
 const Products = () => {
   return (
     <div className='products'>

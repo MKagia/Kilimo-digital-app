@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Kilimo-Digital
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Kilimo-Digital is a modern React-based Single Page Application (SPA) designed to empower farmers with real-time weather insights and smart farming recommendations. The platform integrates weather forecasting by county and features an online marketplace for essential farming tools — helping farmers make informed decisions about planting, irrigation, and tool acquisition to boost productivity.
 
-## Available Scripts
+# Features
+# Weather Forecasting & Smart Farming
+Live Weather Updates – Real-time climate data displayed dynamically based on the farmer’s selected county.
+County-Based Forecasts – Displays monthly weather patterns sourced from structured JSON files.
+Crop Suggestions – Recommends ideal crops based on local weather conditions.
+Farming Activity Guide – Suggests actions like irrigation, planting, or pest control depending on current weather.
 
-In the project directory, you can run:
+# E-commerce for Farming Tools
+Online Store – Browse a curated collection of essential farming equipment.
+Shopping Cart – Add, update, and remove tools with seamless cart functionality.
+Checkout Process – Finalize purchases with an intuitive flow designed for quick transactions.
+Image Integration – Each product includes images for clear and easy identification.
 
-### `npm start`
+# Interactive & Dynamic User Experience
+Search by County – Easily fetch weather forecasts based on user input.
+Dynamic Rendering – Weather updates and store content rendered in real-time using React's component system.
+Clean, Responsive UI – Built with React and Bootstrap to ensure accessibility and ease of use across all devices.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Technologies Used
+React – Core framework for building UI components and managing state.
+Bootstrap – For responsive design and consistent styling.
+JavaScript (ES6+) – For logic, interactivity, and DOM control.
+JSON Files – Store mock weather data for different counties.
+JSON Server – Serve weather and product data locally during development.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Usage
+Search for your county to view tailored weather forecasts.
+Get farming recommendations based on the weather: when to plant, irrigate, or protect crops.
+Explore the digital store, add tools to your cart, and adjust quantities.
+Proceed to checkout to simulate a complete shopping flow.
+Discover smart farming resources to optimize your agricultural practices.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Planned Enhancements
+Live Weather API – Replace static forecasts with real-time weather data integration.
+User Authentication – Allow farmers to log in and save preferences.
+Payment Integration – Enable secure online purchases for farming tools.
+Mobile Optimization – Improve responsiveness for smartphones and tablets.
+Multi-Language Support – Make the platform accessible to a broader farming community.

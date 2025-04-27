@@ -1,41 +1,51 @@
 // src/App.js
 import './App.css';
 import React from "react";
-import { Routes, Route } from 'react-router-dom'; 
+import { Routes, Route } from 'react-router-dom';
 
 import Navbar       from './Components/Navbar/Navbar';
 import Hero         from './Components/Hero/Hero';
 import WeatherDashboard from "./Components/WeatherDashboard";
+import OurProducts from './Components/OurProducts/OurProducts';
 import About        from './Components/About/About';
 import Products     from './Components/Products/Products';
 import Contact      from './Components/Contact/Contact';
 import LoginForm    from './Components/LoginForm/LoginForm';
 import Footer       from './Components/Footer/Footer';
 
+import { Link } from 'react-router-dom';
+import { ShoppingCart } from 'phosphor-react';
+
 function App() {
   return (
     <div className="App">
-      <Navbar />
+        <Navbar />
+        
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Hero />
+              <WeatherDashboard />
+              <Products />
+            </>
+          }/>
 
-      <Routes>
-        <Route path="/" element={
-          <>
-            <Hero />
-            <WeatherDashboard />
-            <Products />
-          </>
-        }/>
+          <Route path="/about"   element={<About />} />
+          <Route path="/tools" element={<OurProducts />} />
 
-        <Route path="/about"   element={<About />} />
-        {/* <Route path="/products" element={<Products />} /> */}
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/container-login"   element={<LoginForm />} />
 
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/container-login"   element={<LoginForm />} />
+          <Route path="*" element={<p>Sorry — page not found.</p>} />
+        </Routes>
+        <div className='cart-i'>
+              <Link to="/cart" className="cart-link">
+              <ShoppingCart size={32}/>
+              </Link>
+        
+        </div>
 
-        <Route path="*" element={<p>Sorry — page not found.</p>} />
-      </Routes>
-
-      <Footer />
+        <Footer />
     </div>
   );
 }
