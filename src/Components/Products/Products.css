@@ -1,47 +1,62 @@
-.products{
-    margin: 80px auto;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.products img{
+.shopTitle {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 40px;
+  }
+  .products {
     width: 100%;
-    border-radius: 10px;
-    display: block;
-}
-
-.product{
-    flex-basis: 31%;
-    position:relative;
-
-}
-.caption{
-    border-radius: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: rgba(0, 15, 152, 0.3);
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    place-items: center;
+    padding: 40px;
+    margin-bottom: 60px;
+  }
+  
+  .product {
+    border-radius: 15px;
+    width: 300px;
+    height: 350px;
+    margin: 100px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    color: #fff;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+  margin: auto;  
+  }
+  
+  .product img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    object-fit: contain;
+    margin-bottom: 15px;
+  }
+  
+  .product .description {
+    text-align: center;
+  }
+  
+  .product:hover {
+    transition: 0.3s ease-in;
     cursor: pointer;
-    opacity: 0;
-    padding-top: 70%;
-    transition: 0.4s;
-
-}
-
-.caption{
-    /* width: 10px; */
-    margin-bottom: 3px;
-}
-
-.program:hover .caption{
-    opacity: 1;
-}
+  }
+  
+  .addToCartBttn {
+    background-color: transparent;
+    border: 2px solid #0f2500;
+    min-width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+  }
+  
+  .addToCartBttn:hover {
+    background-color: #0f2500;
+    color: white;
+    cursor: pointer;
+  }

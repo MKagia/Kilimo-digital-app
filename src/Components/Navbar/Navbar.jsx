@@ -32,8 +32,7 @@ const Navbar = () => {
             <li><RouterLink to='/'>Home</RouterLink></li>
 
             <li><ScrollLink to='mt-4' smooth={true} offset={-260} duration={500}>Forecast</ScrollLink></li>
-            <li><ScrollLink to='products' smooth={true} offset={-260} duration={500}>Products</ScrollLink></li>
-            <li><RouterLink to='/tools'>OurProducts</RouterLink></li>
+            <li><RouterLink to='/tools'>Products</RouterLink></li>
             <li><RouterLink to='/about'>About Us</RouterLink></li>
             <li> <RouterLink to='/contact'> Contact Us </RouterLink></li>
             <li> <RouterLink to='/container-login'>LogIn</RouterLink></li>

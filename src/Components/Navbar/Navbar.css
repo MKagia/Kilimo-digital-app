@@ -1,5 +1,5 @@
 nav{
-    width: 100%;
+    width: 200%;
     height: 10%;
     /* background: #0f2500; */
     color: #fff;
@@ -59,7 +59,7 @@ nav ul li{
       top: 0;
       right: 0;
       bottom: 0;
-      background: #30a021;
+      background: #0f2500;
       z-index: -1;
       width: 200px;
       padding: 70px;
