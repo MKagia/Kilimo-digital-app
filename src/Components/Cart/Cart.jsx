@@ -24,14 +24,22 @@ const Cart = () => {
             return null;
           }
         })}
-
+      {totalAmount > 0 ? (
         <div className="checkout">
+        
           <p>
             Subtotal: Ksh{totalAmount}
           </p>
           <button onClick={() => navigate('/tools')}>Continue Shopping</button>
           <button>Checkout</button>
         </div>
+      ) : (
+        <div className="checkout">
+          <h1> Your Shopping Cart is Empty</h1>
+          <button onClick={() => navigate('/tools')}>Back to Shopping</button>
+        </div>
+        
+      )}
 
       </div>
     </div>
