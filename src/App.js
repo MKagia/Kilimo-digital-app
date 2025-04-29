@@ -11,6 +11,7 @@ import Contact from './Components/Contact/Contact';
 import LoginForm from './Components/LoginForm/LoginForm';
 import Footer from './Components/Footer/Footer';
 import Cart from './Components/Cart/Cart';
+import ShopContextProvider from './Components/Context/ShopContext';
 
 import { ShoppingCart } from 'phosphor-react';
 
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <div className="App">
+       <ShopContextProvider> 
       <Navbar />
 
       <Routes>
@@ -44,6 +46,7 @@ function App() {
 
 
       <Footer />
+      </ShopContextProvider>
     </div>
   );
 }
