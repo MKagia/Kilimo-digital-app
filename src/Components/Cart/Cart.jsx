@@ -5,7 +5,8 @@ import { ShopContext } from '../Context/ShopContext';
 import CartItem from "./CartItem";
 
 const Cart = () => {
-  const { cartItems } = useContext(ShopContext);
+  const { cartItems, getTotalCartAmount } = useContext(ShopContext);
+  const totalAmount = getTotalCartAmount();
 
 
   return (
@@ -21,6 +22,14 @@ const Cart = () => {
             return null;
           }
         })}
+
+        <div className="checkout">
+          <p>
+            Subtotal: Ksh{totalAmount}
+          </p>
+          <button>Continue Shopping</button>
+          <button>Checkout</button>
+        </div>
 
       </div>
     </div>
