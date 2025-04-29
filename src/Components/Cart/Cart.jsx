@@ -3,12 +3,14 @@ import './Cart.css';
 import { PRODUCTS } from "../tools";
 import { ShopContext } from '../Context/ShopContext';
 import CartItem from "./CartItem";
+import {useNavigate} from 'react-router-dom';
 
 const Cart = () => {
   const { cartItems, getTotalCartAmount } = useContext(ShopContext);
   const totalAmount = getTotalCartAmount();
 
 
+  const navigate = useNavigate()
   return (
     <div className='cart'>
       <div>
@@ -27,7 +29,7 @@ const Cart = () => {
           <p>
             Subtotal: Ksh{totalAmount}
           </p>
-          <button>Continue Shopping</button>
+          <button onClick={() => navigate('/tools')}>Continue Shopping</button>
           <button>Checkout</button>
         </div>
 
